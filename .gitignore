@@ -1,20 +1,80 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+.ipynb_checkpoints/
+
+# coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# ── Secrets / credentials (never commit) ─────────────────────────────────────
 .env
+.env.*
+!.env.example
 .dev.vars
 .dev.vars.*
 site/.dev.vars
+client_secrets.json
+youtube_token.json
+private/
 site/private/
-node_modules/
-__pycache__/
-*.py[cod]
+
+# ── Generated video / audio output ───────────────────────────────────────────
 *.mp4
-*.ts
+*.mov
+*.webm
+*.mkv
+*.avi
+*.wav
+*.m4a
+*.aac
 work/
 test_out/
 output/
-*.log
+instagram_manual_ready/
+downloads/
+clips/
+tmp/
+temp/
+.cache/
+
+# ── Site / Node ──────────────────────────────────────────────────────────────
+node_modules/
 .wrangler/
+*.ts
+
+# ── OS / editor ──────────────────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.log
 
-private/
-
+# ── Local model weights (large) ──────────────────────────────────────────────
 models/person_yolox_s_2022nov.onnx
